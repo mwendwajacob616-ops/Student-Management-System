@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width="device-width", initial-scale="1.0">
+        <title>Register Student | Student Management System</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Student Management System</h1>
+                <p>Manage students records with ease</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="register.html">Register Student</a></li>
+                    <li><a href="students.html">Student Records</a></li>
+
+                     <button type="button" id="logoutBtn">Logout</button>
+                </ul>
+            </nav>
+        </header>
+        <main>
+             <section class="form-section">
+                <h2>Register a New Student</h2>
+                <p>Enter the student's details below.</p>
+                <form id="studentForm">
+                    <div>
+                        <label for="admissionNumber">Admission Number:</label>
+                        <input type="text" name="admissionNumber" placeholder="e.g. KU/2026/001" required id="admissionNumber">
+                    </div>
+                    <div>
+                        <label for="fullName">Full Name: </label>
+                        <input type="text" name="fullName" placeholder="Enter Student's full name" required id="fullName" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="student@example.com" required id="email" autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" placeholder="Enter phone number" required id="phone" autocomplete="tel">
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <select name="gender" required id="gender">
+                            <option value="">Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="course">Course:</label>
+                        <select name="course" required id="course">
+                            <option value="">Select course</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Software Engineering">Software Engineering</option>
+                            <option value="Business Information Technology">Business Inforamation Technology</option>
+                            <option value="Data Science">Data Science</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="yearOfStudy" >yearOfStudy</label>
+                        <select name="yearOfStudy" required id="yearOfStudy">
+                            <option value="">Select Year</option>
+                            <option value="Year 1">Year 1</option>
+                            <option value="Year 2">Year 2</option>
+                            <option value="Year 3">Year 3</option>
+                            <option value="Year 4">Year 4</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="status">Student Status</label>
+                        <select name="status" required id="status">
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select>
+                    </div>
+
+                    <button type="submit">Register Student</button>
+
+                    <button type="reset" class="button">Clear Form</button>
+
+                    <p id="formMessage" role="status"></p>
+                </form>
+            </section>
+</main>
+
+<footer> 
+<p>&copy; 2026 Student Management System</p> 
+</footer> 
+<script src="js/auth.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

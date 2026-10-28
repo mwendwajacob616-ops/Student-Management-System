@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width="device-width", initial-scale="1.0">
+        <title>Student Record | Student Management System</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Student Management System</h1>
+                <p>Manage students records with ease</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="register.html">Register Student</a></li>
+                    <li><a href="students.html">Student Records</a></li>
+
+                     <button type="button" id="logoutBtn">Logout</button>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="records-section">
+                <h2>Student Records</h2>
+                <p>View and manage Registered students</p>
+                <div class="table-controls">
+                    <label for="searchStudent">Search Students:</label>
+                    <input type="search" placeholder="Search name or admission number" id="searchStudent">
+
+                    <label for="filterCourse">Filter by course:</label>
+                    <select id="filterCourse">
+                        <option value="">All courses</option>
+                        <option value="Computer Science">Computer Science </option> 
+                        <option value="Information Technology"> Information Technology </option> 
+                        <option value="Software Engineering"> Software Engineering </option> 
+                        <option value="Business Information Technology"> Business Information Technology </option> 
+                        <option value="Data Science">Data Science</option>
+                    </select>
+
+                    <label for="filterStatus" >Filter by Status:</label>
+
+                    <select id="filterStatus">
+                        <option value="">All Statuses</option>
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Admission Number</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Course</th>
+                                <th>Year</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="studentTableBody">
+                            <tr>
+                                <td colspan="9">
+                                    No student records available.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <a href="register.html" class="button">Register New Student</a>
+            </section>
+</main>
+
+<footer> 
+<p>&copy; 2026 Student Management System</p> 
+</footer> 
+<script src="js/auth.js"></script>
+<script src="js/students.js"></script>
+</body>
+</html>

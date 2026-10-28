@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" width="device-width", initial-scale="1.0">
+        <title>Dashboard | Student Management System</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Student Management System</h1>
+                <p>Manage students records with ease</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="register.html">Register Student</a></li>
+                    <li><a href="students.html">Student Records</a></li>
+
+                    <button type="button" id="logoutBtn">Logout</button>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="dashboard">
+                <h2>Dashboard Overview</h2>
+                <p>Welcome to your Student Management System</p>
+                <div class="dashboard-cards">
+                    <article class="card">
+                        <h3>Total Students</h3>
+                        <p id="totalStudents">0</p>
+                    </article>
+
+                    <article>
+                        <h3>Active Students</h3>
+                        <p id="activeStudents">0</p>
+                    </article>
+
+                    <article>
+                        <h3>Inactive Students</h3>
+                        <p id="inactiveStudents">0</p>
+                    </article>
+
+                    <article>
+                        <h3>Coarses Offered</h3>
+                        <p id="totalCoarses">0</p>
+                    </article>
+
+                </div>   
+
+            </section>
+
+           <section id="quick-actions">
+            <h2>Quick Actions</h2>
+            <a href="register.html" class="button">Register New Student</a>
+            <a href="students.html" class="button">View Student Records</a>
+           </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Student Management System</p>
+        </footer>
+        <script src="js/auth.js"></script>
+        <script src="js/dashboard.js"></script>
+    </body>
+</html>
